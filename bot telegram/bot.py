@@ -3,8 +3,8 @@ import requests
 import schedule
 
 def bot_send_text(bot_message):
-    bot_token = '5394621883:AAFNfqdUzH5bgrtztJMo9DAQXH5uFPV9KU0'
-    bot_chatID = '668857772'
+    bot_token = 'TOKEN ID'
+    bot_chatID = 'CHAT ID'
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
 
     response = requests.get(send_text)
